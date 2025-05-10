@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Bookmarking & Annotation Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Bookmarking Tool</h1>
+
+    <!-- Form to add bookmark -->
+    <form id="bookmarkForm">
+      <input type="url" id="url" placeholder="Enter URL" required>
+      <input type="text" id="tags" placeholder="Enter tags (comma separated)">
+      <textarea id="notes" placeholder="Add your notes..."></textarea>
+      <button type="submit">Save Bookmark</button>
+    </form>
+
+    <!-- Search bar -->
+    <input type="text" id="search" placeholder="Search bookmarks...">
+
+    <!-- Bookmark list -->
+    <div id="bookmarkList">
+      <!-- Saved bookmarks will appear here -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
